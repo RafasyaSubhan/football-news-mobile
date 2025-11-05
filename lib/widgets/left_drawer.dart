@@ -11,6 +11,28 @@ class LeftDrawer extends StatelessWidget {
         children: [
           const DrawerHeader(
             // TODO: Bagian drawer header
+            const DrawerHeader(
+              decoration: BoxDecoration(
+                color: Colors.blue,
+              ),
+              child: Column(
+                children: [
+                  Text(
+                    'Football News',
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                      fontSize: 30,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white,
+                    ),
+                  ),
+                  Padding(padding: EdgeInsets.all(10)),
+                  Text("Seluruh berita sepak bola terkini di sini!",
+                    // TODO: Tambahkan gaya teks dengan center alignment, font ukuran 15, warna putih, dan weight biasa
+                  ),
+                ],
+              ),
+            ),
           ),
           // TODO: Bagian routing
           ListTile(
