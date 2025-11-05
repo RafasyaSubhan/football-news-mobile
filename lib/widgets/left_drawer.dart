@@ -1,0 +1,43 @@
+import 'package:flutter/material.dart';
+import 'package:football_news/menu.dart';
+
+class LeftDrawer extends StatelessWidget {
+  const LeftDrawer({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Drawer(
+      child: ListView(
+        children: [
+          const DrawerHeader(
+            // TODO: Bagian drawer header
+          ),
+          // TODO: Bagian routing
+          ListTile(
+            leading: const Icon(Icons.home_outlined),
+            title: const Text('Home'),
+            // Bagian redirection ke MyHomePage
+            onTap: () {
+              Navigator.pushReplacement(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => MyHomePage(),
+                  ));
+            },
+          ),
+          ListTile(
+            leading: const Icon(Icons.post_add),
+            title: const Text('Add News'),
+            // Bagian redirection ke NewsFormPage
+            onTap: () {
+              /*
+              TODO: Buatlah routing ke NewsFormPage di sini,
+              setelah halaman NewsFormPage sudah dibuat.
+              */
+            },
+          ),
+        ],
+      ),
+    );
+  }
+}
