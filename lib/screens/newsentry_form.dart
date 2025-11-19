@@ -167,6 +167,7 @@ class _NewsFormPageState extends State<NewsFormPage> {
                       backgroundColor:
                         MaterialStateProperty.all(Colors.amber.shade100),
                     ),
+                    
                     onPressed: () async {
                       if (_formKey.currentState!.validate()) {
                         // TODO: Replace the URL with your app's URL
